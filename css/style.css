@@ -1,3 +1,4 @@
+
 .contactoInfo{
     color: black;
     margin-top: 250px !important;
@@ -27,4 +28,18 @@
 
 .formInput{
     height: 3rem;
+}
+
+.customNav{
+    position: absolute;
+    height: 100vh;
+    width: 20%;
+    padding: 20px 20px;
+    box-shadow: 10px 0 20px -2px rgb(196, 196, 196);    
+    z-index: 99;
+}
+
+.customNav > div > div > img{
+    opacity: 70%;
+    width: 25px;
 }
