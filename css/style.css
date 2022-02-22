@@ -31,11 +31,12 @@
 
 .customNav{
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 20%;
     padding: 20px 20px;
     box-shadow: 10px 0 20px -2px rgb(196, 196, 196);    
     z-index: 99;
+    background-color: #fff;
 }
 
 .customNav > div > div > img{
@@ -51,4 +52,8 @@
 .navButton {
     border: none;
     background-color: white;
+}
+
+.blur{
+    filter: blur(3px);
 }
