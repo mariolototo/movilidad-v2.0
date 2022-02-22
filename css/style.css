@@ -1,0 +1,30 @@
+.contactoInfo{
+    color: black;
+    margin-top: 250px !important;
+}
+
+.hrContacto{
+    width: 92%;
+    border-bottom: 4px solid black;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.formContacto{
+    width: 50% !important;
+    margin: auto;
+    margin-top: 40px;
+}
+.button{
+    text-align: center;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #FA5757 !important;
+    border-color: #FA5757 !important;
+    
+}
+
+.formInput{
+    height: 3rem;
+}
