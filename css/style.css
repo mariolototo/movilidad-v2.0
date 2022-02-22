@@ -1,4 +1,3 @@
-
 .contactoInfo{
     color: black;
     margin-top: 250px !important;
@@ -42,4 +41,14 @@
 .customNav > div > div > img{
     opacity: 70%;
     width: 25px;
+}
+
+.customNav > div > div > button{
+    opacity: 70%;
+    width: 25px;
+}
+
+.navButton {
+    border: none;
+    background-color: none;
 }
