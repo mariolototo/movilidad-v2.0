@@ -1,6 +1,10 @@
 .contactoInfo{
     color: black;
-    margin-top: 250px !important;
+    margin-top: 200px !important;
+}
+
+.imgContact{
+    margin-left: 150px;
 }
 
 .hrContacto{
