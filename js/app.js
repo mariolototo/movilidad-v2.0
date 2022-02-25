@@ -96,12 +96,17 @@ window.onload = () => {
     nav.innerHTML = navContent;
     nav.classList.add("d-none");
 
+    let toggle;
     let openNav = document.getElementById("openNav");
 
     openNav.addEventListener("click", () => {
         nav.removeAttribute("class");
         nav.classList.add("customNav", "fs-5", "d-block");
         content.classList.add("blur");
+    });
+
+    openNav.addEventListener("click", () => {
+        this.toggleClass("open");
     });
 
     let closeNav = document.getElementById("closeNav");
