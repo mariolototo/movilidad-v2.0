@@ -115,4 +115,5 @@ window.onload = () => {
         nav.classList.add("d-none");
         content.classList.remove("blur");
     });
+
 }
