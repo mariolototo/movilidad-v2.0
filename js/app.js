@@ -15,7 +15,7 @@ window.onload = () => {
         <img src="../assets/img/nav/product-description.png">
     </div>
     <div class="col-10">
-        <p>Proyecto</p>
+        <a class="link" href="../index.html"><p>Proyecto</p></a>
     </div>
 </div>
 
@@ -28,8 +28,8 @@ window.onload = () => {
 <div class="row w-100">
     <div class="col-2"></div>
     <div class="col-10 fs-6" style="margin-top: -10px !important;">
-        <p class="m-0 text-muted">Descripción</p>
-        <p class="m-0 text-muted">Consorcio</p>
+        <a class="link" href="../templates/descripcion.html"><p class="m-0 text-muted">Descripción</p></a>
+        <a class="link" href="../templates/consorcio.html"><p class="m-0 text-muted">Consorcio</p></a>
     </div>
 </div>
 
@@ -38,7 +38,7 @@ window.onload = () => {
         <img src="../assets/img/nav/image.png">
     </div>
     <div class="col-10">
-        <p>Galería</p>
+        <a class="link" href="../templates/galeria.html"><p>Galería</p></a>
     </div>
 </div>
 
@@ -53,7 +53,7 @@ window.onload = () => {
         <img src="../assets/img/nav/send.png">
     </div>
     <div class="col-10">
-        <p>Difusión</p>
+        <a class="link" href="../templates/difusion.html"><p>Difusión</p></a>
     </div>
 </div>
 
@@ -68,7 +68,7 @@ window.onload = () => {
         <img src="../assets/img/nav/grupo.png">
     </div>
     <div class="col-10">
-        <p>Sobre Nosotros</p>
+        <a class="link" href="../templates/about-us.html"><p>Sobre Nosotros</p></a>
     </div>
 </div>
 
@@ -83,7 +83,7 @@ window.onload = () => {
         <img src="../assets/img/nav/envelope.png">
     </div>
     <div class="col-10">
-        <p>Contacto</p>
+        <a class="link" href="../templates/contacto.html"><p>Contacto</p></a>
     </div>
 </div>
 
