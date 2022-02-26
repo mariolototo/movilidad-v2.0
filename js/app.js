@@ -96,7 +96,6 @@ window.onload = () => {
     nav.innerHTML = navContent;
     nav.classList.add("d-none");
 
-    let toggle;
     let openNav = document.getElementById("openNav");
 
     openNav.addEventListener("click", () => {

@@ -1,25 +1,35 @@
-.contactoInfo{
+/* Hide scrollbars on Chrome, Safari, and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.contactoInfo {
     color: black;
     margin-top: 200px !important;
 }
 
-.imgContact{
+.imgContact {
     margin-left: 150px;
 }
 
-.hrContacto{
+.hrContacto {
     width: 92%;
     border-bottom: 2px solid black;
     margin: auto;
     margin-top: 40px;
 }
 
-.formContacto{
+.formContacto {
     width: 50% !important;
     margin: auto;
     margin-top: 40px;
 }
-.button{
+.button {
     text-align: center;
 }
 
@@ -29,11 +39,11 @@
     
 }
 
-.formInput{
+.formInput {
     height: 3rem;
 }
 
-.customNav{
+.customNav {
     position: absolute;
     height: 100%;
     width: 20%;
@@ -43,12 +53,12 @@
     background-color: #fff;
 }
 
-.customNav > div > div > img{
+.customNav > div > div > img {
     opacity: 70%;
     width: 25px;
 }
 
-.customNav > div > div > button{
+.customNav > div > div > button {
     opacity: 70%;
     width: 25px;
 }
@@ -58,17 +68,17 @@
     background-color: white;
 }
 
-.blur{
+.blur {
     filter: blur(3px);
 }
-.link{
+.link {
     text-decoration: none;
     color: black;
 }
-.link:hover{
+.link:hover {
     color: red;
 }
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
