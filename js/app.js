@@ -1,7 +1,6 @@
 window.onload = () => {
     let content = document.getElementById('content');
     let nav = document.getElementById('nav');
-
     let navContent = `<div class="row w-100 align-middle">
     <div class="col-11"></div>
     <div class="col-1">
