@@ -102,11 +102,7 @@ window.onload = () => {
         nav.classList.add("customNav", "fs-5", "d-block");
         content.classList.add("blur");
     });
-
-    openNav.addEventListener("click", () => {
-        this.toggleClass("open");
-    });
-
+    
     let closeNav = document.getElementById("closeNav");
     closeNav.addEventListener("click", () => {
         nav.removeAttribute("class");
