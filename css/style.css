@@ -85,3 +85,10 @@ body {
     background-color: gray;
     width: 400px;
 }
+
+.about1{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}

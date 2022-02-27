@@ -1,6 +1,6 @@
 window.onload = () => {
-    let content = document.getElementById('content');
-    let nav = document.getElementById('nav');
+    let content = $("#content")[0];
+    let nav = $("#nav")[0];
     let navContent = `<div class="row w-100 align-middle">
     <div class="col-11"></div>
     <div class="col-1">
@@ -95,7 +95,7 @@ window.onload = () => {
     nav.innerHTML = navContent;
     nav.classList.add("d-none");
 
-    let openNav = document.getElementById("openNav");
+    let openNav = $("#openNav")[0];
 
     openNav.addEventListener("click", () => {
         nav.removeAttribute("class");
@@ -103,7 +103,7 @@ window.onload = () => {
         content.classList.add("blur");
     });
     
-    let closeNav = document.getElementById("closeNav");
+    let closeNav = $("#closeNav")[0];
     closeNav.addEventListener("click", () => {
         nav.removeAttribute("class");
         nav.classList.add("d-none");
