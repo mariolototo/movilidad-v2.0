@@ -92,3 +92,12 @@ body {
     overflow-x: hidden;
     perspective: 10px;
 }
+
+.imgabout{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+}
