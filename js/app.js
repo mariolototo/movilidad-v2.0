@@ -114,7 +114,7 @@ window.onload = () => {
     closeNav.addEventListener("click", () => {
         nav.style.animation = "navDesappear .5s ease-in-out";
         setTimeout(() =>{
-            content.classList.remove("fixNavIn");
+            nav.classList.remove("fixNavIn");
             nav.classList.add("fixNavOut");
         }, 500);
 

@@ -1,3 +1,7 @@
+.noto-sans-korean{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 /* Hide scrollbars on Chrome, Safari, and Opera */
 body::-webkit-scrollbar {
     display: none;
@@ -148,4 +152,34 @@ body {
 
 .fixNavOut{
     transform: translate(-400px, 0px);
+}
+
+.indexImg{
+    position: fixed;
+}
+
+.indexText > div > h1{
+    font-size: 180px;
+}
+
+.indexText > div > h4{
+    font-size: 50px;
+}
+
+.que{
+    position: absolute;
+    top: 270px;
+    left: 180px;
+}
+
+.quien{
+    position: absolute;
+    top: 1460px;
+    left: 180px;
+}
+
+.como{
+    position: absolute;
+    top: 1460px;
+    left: 180px;
 }
