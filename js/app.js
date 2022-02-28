@@ -93,21 +93,36 @@ window.onload = () => {
 </div>`
 
     nav.innerHTML = navContent;
-    nav.classList.add("d-none");
 
     let openNav = $("#openNav")[0];
 
     openNav.addEventListener("click", () => {
-        nav.removeAttribute("class");
-        nav.classList.add("customNav", "fs-5", "d-block");
-        content.classList.add("blur");
+        nav.style.animation = "navAppear .5s ease-in-out";
+        setTimeout(() =>{
+            nav.classList.remove("fixNavOut");
+            nav.classList.add("fixNavIn");
+        }, 500);
+
+        content.style.animation = "blur .5s linear";
+        setTimeout(() =>{
+            content.classList.remove("unblur");
+            content.classList.add("blur");
+        }, 500);
     });
     
     let closeNav = $("#closeNav")[0];
     closeNav.addEventListener("click", () => {
-        nav.removeAttribute("class");
-        nav.classList.add("d-none");
-        content.classList.remove("blur");
+        nav.style.animation = "navDesappear .5s ease-in-out";
+        setTimeout(() =>{
+            content.classList.remove("fixNavIn");
+            nav.classList.add("fixNavOut");
+        }, 500);
+
+        content.style.animation = "unblur .5s linear";
+        setTimeout(() =>{
+            content.classList.remove("blur");
+            content.classList.add("unblur");
+        }, 500);
     });
 
 }

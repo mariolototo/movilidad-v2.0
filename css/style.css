@@ -6,7 +6,11 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-  }
+}
+
+#content{
+    animation-fill-mode: forwards;
+}
 
 .contactoInfo {
     color: black;
@@ -51,6 +55,7 @@ body {
     box-shadow: 10px 0 20px -2px rgb(196, 196, 196);    
     z-index: 99;
     background-color: #fff;
+    transform: translate(-400px, 0px);
 }
 
 .customNav > div > div > img {
@@ -63,20 +68,43 @@ body {
     width: 25px;
 }
 
+.customNav.navAnimation{
+    transform: translate(0px, 0px);
+    transition: all .5s;
+}
+
 .navButton {
     border: none;
     background-color: white;
 }
 
-.blur {
+@keyframes blur {
+    100%{
+        filter: blur(3px);
+    }
+}
+
+@keyframes unblur {
+    100%{
+        filter: blur(0px);
+    }
+}
+
+.blur{
     filter: blur(3px);
 }
+
+.unblur{
+    filter: blur(0px);
+}
+
 .link {
     text-decoration: none;
     color: black;
 }
 .link:hover {
     color: red;
+    transition: .2s;
 }
 .card {
     display: flex;
@@ -100,4 +128,24 @@ body {
     align-items: center;
     height: 100%;
     transform-style: preserve-3d;
+}
+
+@keyframes navAppear {
+    100%{
+        transform: translate(0px, 0px);
+    }
+} 
+
+@keyframes navDesappear {
+    100%{
+        transform: translate(-400px, 0px);
+    }
+}
+
+.fixNavIn{
+    transform: translate(0px, 0px);
+}
+
+.fixNavOut{
+    transform: translate(-400px, 0px);
 }
