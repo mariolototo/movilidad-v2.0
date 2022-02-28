@@ -180,6 +180,10 @@ body {
 
 .como{
     position: absolute;
-    top: 1460px;
+    top: 2650px;
     left: 180px;
+}
+
+.descripcionText{
+    margin-right: 200px !important;
 }
