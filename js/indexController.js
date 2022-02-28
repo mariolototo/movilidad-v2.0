@@ -1,0 +1,1 @@
+document.body.style.backgroundImage = "url('http://localhost:60000/img/1.jpg')";

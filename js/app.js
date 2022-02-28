@@ -98,31 +98,30 @@ window.onload = () => {
 
     openNav.addEventListener("click", () => {
         nav.style.animation = "navAppear .5s ease-in-out";
-        setTimeout(() =>{
+        setTimeout(() => {
             nav.classList.remove("fixNavOut");
             nav.classList.add("fixNavIn");
         }, 500);
 
         content.style.animation = "blur .5s linear";
-        setTimeout(() =>{
+        setTimeout(() => {
             content.classList.remove("unblur");
             content.classList.add("blur");
         }, 500);
     });
-    
+
     let closeNav = $("#closeNav")[0];
     closeNav.addEventListener("click", () => {
         nav.style.animation = "navDesappear .5s ease-in-out";
-        setTimeout(() =>{
+        setTimeout(() => {
             nav.classList.remove("fixNavIn");
             nav.classList.add("fixNavOut");
         }, 500);
 
         content.style.animation = "unblur .5s linear";
-        setTimeout(() =>{
+        setTimeout(() => {
             content.classList.remove("blur");
             content.classList.add("unblur");
         }, 500);
-    });
-
+    }); 
 }
