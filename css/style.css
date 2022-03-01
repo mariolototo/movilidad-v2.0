@@ -154,48 +154,28 @@ body {
     transform: translate(-400px, 0px);
 }
 
-/* .indexImg{
-    position: fixed;
-}
-
-.indexText > div > h1{
-    font-size: 180px;
-}
-
-.indexText > div > h4{
-    font-size: 50px;
-}
-
-.que{
-    position: absolute;
-    top: 270px;
-    left: 180px;
-}
-
-.quien{
-    position: absolute;
-    top: 1460px;
-    left: 180px;
-}
-
-.como{
-    position: absolute;
-    top: 2650px;
-    left: 180px;
-} */
-
 .descripcionText{
     margin-right: 200px !important;
 }
 
+#index{
+    background-image: url("../assets/img/index/1.jpg");
+    height: 100vh;
+}
 /* Pruebas index */
 
-/* .indexContent{
+ .indexContent{
     width: 100%;
     height: 100%;
     background-image: url("../assets/img/index/1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding-left: 15%;
+    padding-top: 10%;
+}
+
+.indexContent > div {
+    margin-bottom: 30%;
 }
 
 .indexContent > div > h1{
@@ -206,14 +186,21 @@ body {
     font-size: 50px;
 }
 
-.que{
-    position: absolute;
-    top: 176px;
-    left: 288px;
+.downArrow{
+    background: none;
+    border: none;
+    position: fixed;
+    top: 87%;
+    left: 50%;
+    opacity: 70%;
 }
 
-.quien{
-    position: absolute;
-    top: 1094px;
-    left: 288px;
-} */
+.downArrow:hover{
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+.downArrow:not(:hover){
+    opacity: 70%;
+    transition: 0.3s;
+}
