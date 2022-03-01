@@ -1,6 +1,4 @@
-.noto-sans-korean{
-    font-family: 'Noto Sans KR', sans-serif;
-}
+/* -------------GLOBALES-------------- */
 
 /* Hide scrollbars on Chrome, Safari, and Opera */
 body::-webkit-scrollbar {
@@ -11,6 +9,16 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+/* ----------------------------------- */
+
+/* -------------TIPOGRAFIAS-------------- */
+
+.noto-sans-korean{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* ----------------------------------- */
+
+/* -------------CONTACTO-------------- */
 
 #content{
     animation-fill-mode: forwards;
@@ -50,6 +58,9 @@ body {
 .formInput {
     height: 3rem;
 }
+/* ----------------------------------- */
+
+/* -------------NAV-------------- */
 
 .customNav {
     position: absolute;
@@ -110,6 +121,9 @@ body {
     color: red;
     transition: .2s;
 }
+/* ----------------------------------- */
+
+/* -------------CONSORCIO-------------- */
 .card {
     display: flex;
     flex-direction: column;
@@ -117,7 +131,9 @@ body {
     background-color: gray;
     width: 400px;
 }
+/* ----------------------------------- */
 
+/* -------------ABOUT-US-------------- */
 .about1{
     height: 100vh;
     overflow-y: auto;
@@ -217,3 +233,26 @@ body {
     top: 1094px;
     left: 288px;
 } */
+
+/* GALERIA */
+
+.years > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.years > ul >li {
+    margin-right: 45px;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+
+.btnYears {
+    background: rgb(228, 228, 228);
+    border-radius: 15px;
+}
