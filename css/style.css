@@ -9,6 +9,10 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+.c-white{
+    color: white;
+}
 /* ----------------------------------- */
 
 /* -------------TIPOGRAFIAS-------------- */
@@ -173,25 +177,37 @@ body {
 .descripcionText{
     margin-right: 200px !important;
 }
-
-#index{
-    background-image: url("../assets/img/index/1.jpg");
-    height: 100vh;
-}
 /* Pruebas index */
 
- .indexContent{
+.indexContent{
     width: 100%;
     height: 100%;
-    background-image: url("../assets/img/index/1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     padding-left: 15%;
     padding-top: 10%;
 }
 
-.indexContent > div {
-    margin-bottom: 30%;
+.bgIndex-0{
+    background-image: url("../assets/img/index/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: .5s;
+}
+
+.bgIndex-1{
+    background-image: url("../assets/img/index/2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: .5s;
+}
+
+.bgIndex-2{
+    background-image: url("../assets/img/index/3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: .5s;
 }
 
 .indexContent > div > h1{
@@ -203,12 +219,15 @@ body {
 }
 
 .downArrow{
-    background: none;
-    border: none;
     position: fixed;
     top: 87%;
     left: 47%;
     opacity: 70%;
+}
+
+.downArrow > button {
+    background: none;
+    border: none;
 }
 
 .downArrow:hover{
@@ -243,6 +262,14 @@ body {
 .upArrow:not(:hover){
     opacity: 70%;
     transition: 0.3s;
+}
+
+.que{
+    padding-bottom: 30%;
+}
+
+.quien{
+    padding-bottom: 30%;
 }
 
 .como{
