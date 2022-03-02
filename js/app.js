@@ -123,5 +123,10 @@ window.onload = () => {
             content.classList.remove("blur");
             content.classList.add("unblur");
         }, 500);
-    }); 
+    });
+
+    /* GALERIA */
+    let buttons = $(".btnYears");
+    
+
 }
