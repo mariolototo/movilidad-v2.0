@@ -283,30 +283,98 @@ body {
 
 /* GALERIA */
 
-.years > ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+.navGaleria {
+    position: relative;
+    margin: 270px auto 0;
+    width: 730px;
+    height: 50px;
 }
 
-.years > ul >li {
-    margin-right: 45px;
-    font-size: 28px;
-    font-weight: 600;
+.navGaleria a {
+    font-size: 26px;
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.navGaleria a:hover {
     color: black;
 }
 
-.btnYears {
-    background: none;
-    border: none;
-    padding: 0px 15px;
+.navGaleria .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background:rgb(196, 196, 196);
+    transition: all .5s ease 0s;
+    border-radius: 15px;
 }
 
-.btnSelected {
-    background: rgb(228, 228, 228);
-    border-radius: 15px;
-    border: none;
+a:nth-child(1) {
+    width: 100px;
+}
+
+.navGaleria .start-home,a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0px;
+}
+
+a:nth-child(2) {
+    width: 100px;
+}
+
+.navGaleria .start-home,a:nth-child(2):hover~.animation {
+    width: 100px;
+    left: 105px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+.navGaleria .start-home,a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+}
+
+a:nth-child(4) {
+    width: 100px;
+}
+
+.navGaleria .start-home,a:nth-child(4):hover~.animation {
+    width: 100px;
+    left: 315px;
+}
+
+a:nth-child(5) {
+    width: 100px;
+}
+
+.navGaleria .start-home,a:nth-child(5):hover~.animation {
+    width: 100px;
+    left: 418px;
+}
+
+a:nth-child(6) {
+    width: 100px;
+}
+
+.navGaleria .start-home,a:nth-child(6):hover~.animation {
+    width: 100px;
+    left: 520px;
+}
+
+a:nth-child(7){
+    width: 100px;
+}
+
+.navGaleria .start-home,a:nth-child(7):hover~.animation {
+    width: 100px;
+    left: 627px;
 }

@@ -127,18 +127,26 @@ window.onload = () => {
 
     /* GALERIA */
     let buttons = $(".btnYears");
-    for(let i = 0; i < buttons.length; i++) {
+    for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener("click", selectYear);
     }
 
     function selectYear() {
 
-        for(let i = 0; i < buttons.length; i++) {
+        for (let i = 0; i < buttons.length; i++) {
             buttons[i].classList.remove("btnSelected");
         }
         this.classList.add("btnSelected");
-        console.log(this);
     }
-    
+
+    $(".years").on("mouseover", animateYears);
+
+    function animateYears() {
+        let div = document.createElement("div");
+        div.classList.add("btnSelected", "btnYears");
+        let e = window.event;
+        let posX = e.clientX;
+        let posY = e.clientY;
+    }
 
 }
