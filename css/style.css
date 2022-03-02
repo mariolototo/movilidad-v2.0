@@ -207,11 +207,10 @@ body {
     border: none;
     position: fixed;
     top: 87%;
-    left: 50%;
+    left: 47%;
     opacity: 70%;
 }
 
-<<<<<<< HEAD
 .downArrow:hover{
     opacity: 100%;
     transition: 0.3s;
@@ -220,12 +219,40 @@ body {
 .downArrow:not(:hover){
     opacity: 70%;
     transition: 0.3s;
-=======
-.quien{
-    position: absolute;
-    top: 1094px;
-    left: 288px;
-} */
+}
+
+.upArrow{
+    width: fit-content;
+    position: fixed;
+    top: 0%;
+    left: 47%;
+    opacity: 70%;
+    transform: rotate(180deg);
+}
+
+.upArrow > button {
+    background: none;
+    border: none;
+}
+
+.upArrow:hover{
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+.upArrow:not(:hover){
+    opacity: 70%;
+    transition: 0.3s;
+}
+
+.como{
+    padding-bottom: 30%;
+}
+
+.stopScroll{
+    height: 100%;
+    overflow: hidden;
+}
 
 /* GALERIA */
 
@@ -255,5 +282,4 @@ body {
     border-radius: 15px;
     border: none;
     padding: 0px 15px;
->>>>>>> main
 }
