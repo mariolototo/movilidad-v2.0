@@ -127,6 +127,18 @@ window.onload = () => {
 
     /* GALERIA */
     let buttons = $(".btnYears");
+    for(let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", selectYear);
+    }
+
+    function selectYear() {
+
+        for(let i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("btnSelected");
+        }
+        this.classList.add("btnSelected");
+        console.log(this);
+    }
     
 
 }

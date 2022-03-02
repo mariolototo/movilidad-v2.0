@@ -275,11 +275,11 @@ body {
 .btnYears {
     background: none;
     border: none;
+    padding: 0px 15px;
 }
 
 .btnSelected {
     background: rgb(228, 228, 228);
     border-radius: 15px;
     border: none;
-    padding: 0px 15px;
 }
