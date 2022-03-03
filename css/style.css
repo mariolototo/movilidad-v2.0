@@ -311,7 +311,7 @@ body {
     height: 100%;
     top: 0;
     z-index: 0;
-    background:rgb(196, 196, 196);
+    background:rgb(235, 235, 235);
     transition: all .5s ease 0s;
     border-radius: 15px;
 }
@@ -320,7 +320,7 @@ a:nth-child(1) {
     width: 100px;
 }
 
-.navGaleria .start-home,a:nth-child(1):hover~.animation {
+.navGaleria:hover .start-selected,a:nth-child(1):hover~.animation {
     width: 100px;
     left: 0px;
 }
@@ -329,7 +329,7 @@ a:nth-child(2) {
     width: 100px;
 }
 
-.navGaleria .start-home,a:nth-child(2):hover~.animation {
+.navGaleria a:nth-child(2):hover~.animation {
     width: 100px;
     left: 105px;
 }
@@ -338,7 +338,7 @@ a:nth-child(3) {
     width: 100px;
 }
 
-.navGaleria .start-home,a:nth-child(3):hover~.animation {
+.navGaleria a:nth-child(3):hover~.animation {
     width: 100px;
     left: 210px;
 }
@@ -347,7 +347,7 @@ a:nth-child(4) {
     width: 100px;
 }
 
-.navGaleria .start-home,a:nth-child(4):hover~.animation {
+.navGaleria a:nth-child(4):hover~.animation {
     width: 100px;
     left: 315px;
 }
@@ -356,7 +356,7 @@ a:nth-child(5) {
     width: 100px;
 }
 
-.navGaleria .start-home,a:nth-child(5):hover~.animation {
+.navGaleria a:nth-child(5):hover~.animation {
     width: 100px;
     left: 418px;
 }
@@ -365,7 +365,7 @@ a:nth-child(6) {
     width: 100px;
 }
 
-.navGaleria .start-home,a:nth-child(6):hover~.animation {
+.navGaleria a:nth-child(6):hover~.animation {
     width: 100px;
     left: 520px;
 }
@@ -374,7 +374,12 @@ a:nth-child(7){
     width: 100px;
 }
 
-.navGaleria .start-home,a:nth-child(7):hover~.animation {
+.navGaleria a:nth-child(7):hover~.animation {
     width: 100px;
     left: 627px;
+}
+
+.selected {
+    background:rgb(182, 182, 182);
+    border-radius: 15px;
 }

@@ -126,27 +126,18 @@ window.onload = () => {
     });
 
     /* GALERIA */
-    let buttons = $(".btnYears");
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener("click", selectYear);
+    let years = $(".yearsA");
+    for (let i = 0; i < years.length; i++) {
+        years[i].addEventListener("click", selectYear);
     }
 
     function selectYear() {
 
-        for (let i = 0; i < buttons.length; i++) {
-            buttons[i].classList.remove("btnSelected");
+        for (let i = 0; i < years.length; i++) {
+            console.log(years[i]);
+            years[i].classList.remove("selected");
         }
-        this.classList.add("btnSelected");
-    }
-
-    $(".years").on("mouseover", animateYears);
-
-    function animateYears() {
-        let div = document.createElement("div");
-        div.classList.add("btnSelected", "btnYears");
-        let e = window.event;
-        let posX = e.clientX;
-        let posY = e.clientY;
+        this.classList.add("selected");
     }
 
 }
