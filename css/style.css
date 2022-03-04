@@ -383,3 +383,59 @@ a:nth-child(7){
     background:rgb(182, 182, 182);
     border-radius: 15px;
 }
+
+.sliderGaleria{
+    overflow: hidden;
+}
+
+.sliderGaleria > div > img{
+    margin-right: 5%;
+}
+
+.btnPrev{
+    position: fixed;
+    top: 489px;
+    left: 196px;
+    transform: rotate(90deg);
+    opacity: 70%;
+    z-index: 9999;
+}
+
+.btnPrev > button{
+    background: none;
+    border: none;
+}
+
+.btnPrev:hover{
+    opacity: 100%;
+    transition: .3s;
+}
+
+.btnNext{
+    position: fixed;
+    top: 482px;
+    left: 1557px;
+    transform: rotate(-90deg);
+    opacity: 70%;
+    z-index: 9999;
+}
+
+.btnNext > button{
+    background: none;
+    border: none;
+}
+
+.btnNext:hover{
+    opacity: 100%;
+    transition: .3s;
+}
+
+.translate-500{
+    transform: translate(-500px, 0px);
+    transition: .5s;
+}
+
+.translate--500{
+    transform: translate(500px, 0px);
+    transition: .5s;
+}

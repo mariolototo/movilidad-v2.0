@@ -140,4 +140,20 @@ window.onload = () => {
         this.classList.add("selected");
     }
 
+    let btnNext = $("#btnNext");
+    let btnPrev = $("#btnPrev");
+
+    btnNext.on("click", () => {
+        let sliderContent = document.getElementById("sliderContent");
+
+        sliderContent.style.transform = "translate(-300px)";
+        sliderContent.style.transition = ".5s ease";
+    });
+
+    btnPrev.on("click", () => {
+        let sliderContent = document.getElementById("sliderContent");
+
+        sliderContent.style.transform = "translate(300px)";
+        sliderContent.style.transition = ".5s ease";
+    })
 }
