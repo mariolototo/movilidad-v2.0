@@ -140,20 +140,32 @@ window.onload = () => {
         this.classList.add("selected");
     }
 
+    let sliderContent = document.getElementById("sliderContent");
+    let arrayImgs = [];
+    console.log(sliderContent.children)
+    for(let i = 0; i < sliderContent.children.length; i++) {
+        arrayImgs.push(sliderContent.children[i]);
+    }
+
+    console.log(arrayImgs);
+
     let btnNext = $("#btnNext");
     let btnPrev = $("#btnPrev");
 
     btnNext.on("click", () => {
-        let sliderContent = document.getElementById("sliderContent");
-
         sliderContent.style.transform = "translate(-300px)";
         sliderContent.style.transition = ".5s ease";
     });
 
     btnPrev.on("click", () => {
-        let sliderContent = document.getElementById("sliderContent");
-
-        sliderContent.style.transform = "translate(300px)";
+        sliderContent.style.transform = "translate(300px)"; 
         sliderContent.style.transition = ".5s ease";
-    })
+    });
+    arrayImgs[0].style.width = "250px";
+    arrayImgs[0].style.height = "200px";
+    arrayImgs[0].style.marginTop = "100px";
+    arrayImgs[2].style.width = "250px";
+    arrayImgs[2].style.height = "200px";
+    arrayImgs[2].style.marginTop = "100px";
+
 }
