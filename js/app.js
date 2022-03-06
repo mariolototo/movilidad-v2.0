@@ -160,14 +160,14 @@ window.onload = () => {
     let btnPrev = $("#btnPrev");
 
     btnNext.on("click", () => {
-        sliderContent.style.transform = "translate(-250px)";
+        sliderContent.style.transform = "translate(-150px)";
         sliderContent.style.transition = ".5s ease";
         contador++;
         changeImgsNext();
     });
 
     btnPrev.on("click", () => {
-        sliderContent.style.transform = "translate(250px)"; 
+        sliderContent.style.transform = "translate(150px)"; 
         sliderContent.style.transition = ".5s ease";
         contador--;
         changeImgsPrev();
@@ -207,6 +207,6 @@ window.onload = () => {
 
     }
 
-
+    
 
 }
