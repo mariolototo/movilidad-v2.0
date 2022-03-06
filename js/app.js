@@ -142,30 +142,71 @@ window.onload = () => {
 
     let sliderContent = document.getElementById("sliderContent");
     let arrayImgs = [];
-    console.log(sliderContent.children)
+
     for(let i = 0; i < sliderContent.children.length; i++) {
         arrayImgs.push(sliderContent.children[i]);
     }
 
-    console.log(arrayImgs);
+    let contador = 0;
 
-    let btnNext = $("#btnNext");
-    let btnPrev = $("#btnPrev");
-
-    btnNext.on("click", () => {
-        sliderContent.style.transform = "translate(-300px)";
-        sliderContent.style.transition = ".5s ease";
-    });
-
-    btnPrev.on("click", () => {
-        sliderContent.style.transform = "translate(300px)"; 
-        sliderContent.style.transition = ".5s ease";
-    });
     arrayImgs[0].style.width = "250px";
     arrayImgs[0].style.height = "200px";
     arrayImgs[0].style.marginTop = "100px";
     arrayImgs[2].style.width = "250px";
     arrayImgs[2].style.height = "200px";
     arrayImgs[2].style.marginTop = "100px";
+
+    let btnNext = $("#btnNext");
+    let btnPrev = $("#btnPrev");
+
+    btnNext.on("click", () => {
+        sliderContent.style.transform = "translate(-250px)";
+        sliderContent.style.transition = ".5s ease";
+        contador++;
+        changeImgsNext();
+    });
+
+    btnPrev.on("click", () => {
+        sliderContent.style.transform = "translate(250px)"; 
+        sliderContent.style.transition = ".5s ease";
+        contador--;
+        changeImgsPrev();
+    });
+
+    function changeImgsNext() {
+
+        if(contador > arrayImgs.length - 1) {
+            contador = arrayImgs.length - 1;
+        }
+
+        arrayImgs[contador - 1].style.width = "250px";
+        arrayImgs[contador - 1].style.height = "200px";
+        arrayImgs[contador - 1].style.marginTop = "100px";
+        arrayImgs[contador - 1].style.transition = ".5s ease";
+        arrayImgs[contador].style.width = "500px";
+        arrayImgs[contador].style.height = "380px";
+        arrayImgs[contador].style.marginTop = "0px";
+        arrayImgs[contador].style.transition = ".5s ease";
+
+    }
+
+    function changeImgsPrev() {
+
+        if(contador < 0) {
+            contador = 0;
+        } 
+
+        arrayImgs[contador + 1].style.width = "250px";
+        arrayImgs[contador + 1].style.height = "200px";
+        arrayImgs[contador + 1].style.marginTop = "100px";
+        arrayImgs[contador + 1].style.transition = ".5s ease";
+        arrayImgs[contador].style.width = "500px";
+        arrayImgs[contador].style.height = "380px";
+        arrayImgs[contador].style.marginTop = "0px";
+        arrayImgs[contador].style.transition = ".5s ease";
+
+    }
+
+
 
 }

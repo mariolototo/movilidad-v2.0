@@ -395,7 +395,7 @@ a:nth-child(7){
 .btnPrev{
     position: fixed;
     top: 489px;
-    left: 196px;
+    left: 120px;
     transform: rotate(90deg);
     opacity: 70%;
     z-index: 9999;
@@ -438,4 +438,18 @@ a:nth-child(7){
 .translate--500{
     transform: translate(500px, 0px);
     transition: .5s;
+}
+
+.img-little {
+    width: 250px;
+    height: 200px;
+    margin-top: 100px;
+    transition: all .5s ease 0s;
+}
+
+.img-big {
+    width: 500px;
+    height: 380px;
+    margin-top: none;
+    transition: all .5s ease 0s;
 }
