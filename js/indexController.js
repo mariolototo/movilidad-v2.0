@@ -89,7 +89,6 @@ function scrollUp() {
             behavior: "smooth"
         });
     } else {
-        console.log("coño de su puta madre")
         let offset = 200;
         console.log("Item target: " + cont);
         console.log("Target: " + enlaces[cont].getBoundingClientRect().top);

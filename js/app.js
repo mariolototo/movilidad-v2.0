@@ -143,39 +143,60 @@ window.onload = () => {
     let sliderContent = document.getElementById("sliderContent");
     let arrayImgs = [];
 
-    for(let i = 0; i < sliderContent.children.length; i++) {
+    for (let i = 0; i < sliderContent.children.length; i++) {
         arrayImgs.push(sliderContent.children[i]);
+        if (i != 0) {
+            arrayImgs[i].style.width = "250px";
+            arrayImgs[i].style.height = "200px";
+            arrayImgs[i].style.marginTop = "100px";
+        }
     }
 
     let contador = 0;
+    let moveAmount = 1323;
+    let offset = 0;
 
-    arrayImgs[0].style.width = "250px";
-    arrayImgs[0].style.height = "200px";
-    arrayImgs[0].style.marginTop = "100px";
-    arrayImgs[2].style.width = "250px";
-    arrayImgs[2].style.height = "200px";
-    arrayImgs[2].style.marginTop = "100px";
+    arrayImgs[contador].style.width = "500px";
+    sliderContent.style.transform = "translate(1323px)";
 
     let btnNext = $("#btnNext");
     let btnPrev = $("#btnPrev");
 
     btnNext.on("click", () => {
-        sliderContent.style.transform = "translate(-150px)";
-        sliderContent.style.transition = ".5s ease";
         contador++;
+
+        if (contador == 1) {
+            btnPrev.html("<button><img src='../assets/img/index/arrow-down.png' width='150px'></button>");
+        }else if(contador == arrayImgs.length - 1){
+            btnNext.html("");
+        }
+
+        offset += 1.5;
+        moveAmount -= 315 + offset;
+        sliderContent.style.transform = "translate(" + moveAmount + "px)";
+        sliderContent.style.transition = ".5s ease";
+    
         changeImgsNext();
     });
 
     btnPrev.on("click", () => {
-        sliderContent.style.transform = "translate(150px)"; 
-        sliderContent.style.transition = ".5s ease";
         contador--;
+        console.log(contador)
+        if(contador == 0){
+            btnNext.html("");
+        }
+
+        offset -= 1.5;
+        moveAmount += 315 + offset;
+        sliderContent.style.transform = "translate(" + moveAmount + "px)";
+        sliderContent.style.transition = ".5s ease";
+        
         changeImgsPrev();
     });
 
     function changeImgsNext() {
 
-        if(contador > arrayImgs.length - 1) {
+        if (contador > arrayImgs.length - 1) {
             contador = arrayImgs.length - 1;
         }
 
@@ -191,10 +212,11 @@ window.onload = () => {
     }
 
     function changeImgsPrev() {
+        console.log(contador)
 
-        if(contador < 0) {
+        if (contador <= 0) {
             contador = 0;
-        } 
+        }
 
         arrayImgs[contador + 1].style.width = "250px";
         arrayImgs[contador + 1].style.height = "200px";
@@ -207,6 +229,6 @@ window.onload = () => {
 
     }
 
-    
+
 
 }
