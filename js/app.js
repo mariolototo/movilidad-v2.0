@@ -232,9 +232,7 @@ window.onload = () => {
     }
 
     mediumZoom(".minigallerImg", {
-        margin: 50,
-        width: 600,
-        height: 600
+        margin: 0,
     });
 
 }
