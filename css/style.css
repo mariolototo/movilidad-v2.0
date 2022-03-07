@@ -145,6 +145,15 @@ body {
     perspective: 10px;
 }
 
+#closeAbout {
+    background: none;
+    border: none;
+    font-size: 32px;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+}
+
 .imgabout{
     position: relative;
     display: flex;
