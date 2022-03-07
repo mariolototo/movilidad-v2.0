@@ -145,6 +145,8 @@ body {
     perspective: 10px;
 }
 
+
+
 #closeAbout {
     background: none;
     border: none;
@@ -162,31 +164,6 @@ body {
     height: 100%;
     transform-style: preserve-3d;
 }
-
-@keyframes navAppear {
-    100%{
-        transform: translate(0px, 0px);
-    }
-} 
-
-@keyframes navDesappear {
-    100%{
-        transform: translate(-400px, 0px);
-    }
-}
-
-.fixNavIn{
-    transform: translate(0px, 0px);
-}
-
-.fixNavOut{
-    transform: translate(-400px, 0px);
-}
-
-.descripcionText{
-    margin-right: 200px !important;
-}
-/* Pruebas index */
 
 .indexContent{
     width: 100%;
@@ -288,6 +265,30 @@ body {
 .stopScroll{
     height: 100%;
     overflow: hidden;
+}
+
+@keyframes navAppear {
+    100%{
+        transform: translate(0px, 0px);
+    }
+} 
+
+@keyframes navDesappear {
+    100%{
+        transform: translate(-400px, 0px);
+    }
+}
+
+.fixNavIn{
+    transform: translate(0px, 0px);
+}
+
+.fixNavOut{
+    transform: translate(-400px, 0px);
+}
+
+.descripcionText{
+    margin-right: 200px !important;
 }
 
 /* GALERIA */
