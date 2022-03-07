@@ -181,9 +181,11 @@ window.onload = () => {
 
     btnPrev.on("click", () => {
         contador--;
-        console.log(contador)
+        if(contador < arrayImgs.length - 1){
+            btnNext.html("<button><img src='../assets/img/index/arrow-down.png 'width='150px'></button>");
+        }
         if(contador == 0){
-            btnNext.html("");
+            btnPrev.html("");
         }
 
         offset -= 1.5;
