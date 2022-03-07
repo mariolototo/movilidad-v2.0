@@ -154,10 +154,10 @@ window.onload = () => {
 
     let contador = 0;
     let moveAmount = 1453;
-    let offset = 0;
+    let offset = 1;
 
     arrayImgs[contador].style.width = "500px";
-    sliderContent.style.transform = "translate(1453px)";
+    sliderContent.style.transform = "translate(1400px)";
 
     let btnNext = $("#btnNext");
     let btnPrev = $("#btnPrev");
@@ -171,11 +171,13 @@ window.onload = () => {
             btnNext.html("");
         }
 
-        offset += 1.5;
-        moveAmount -= 310 + offset;
+        //offset += 10;
+        moveAmount -= 370/*  - offset */;
         sliderContent.style.transform = "translate(" + moveAmount + "px)";
         sliderContent.style.transition = ".5s ease";
     
+        console.log(sliderContent.getBoundingClientRect().x);
+
         changeImgsNext();
     });
 

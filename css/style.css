@@ -395,6 +395,7 @@ a:nth-child(7){
 
 .sliderGaleria{
     overflow: hidden;
+    width: 60% !important;
 }
 
 .sliderGaleria > div > img{
