@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -17,36 +20,38 @@
 </head>
 
 <body>
-    <div class="window-content">
-        <div id="nav" class="customNav fs-5 d-block">
-        
-        </div>
+    <!-- CONTAINER GENERAL -->
+    <div class="window-content" id="index">
+        <div id="upArrowContainer" class="upArrow"></div>
         <div class="container-fluid p-0 m-0" id="content">
+            <!-- CONTAINER INDEX -->
+            <div id="indexContent" class="indexContent bgIndex-0">
 
-            <div class="header pt-2">
-                <div class="row">
-                    <div class="col-3 mt-3 ps-5">
-                        <button class="navButton" id="openNav"><img src="../assets/img/menu.png" alt="" width="30"
-                                height="30"></button>
-                    </div>
-                    <div class="col-5">
-                        <img class="img-fluid" src="../assets/img/logo.png" alt="" width="250" height="60">
-                    </div>
-                    <div class="col-4 mt-2">
-                        <img src="../assets/img/cofinanciado.png" alt="" width="200" height="50">
-                    </div>
-                    <hr>
+                <div class="que">
+                    <a href="#que"></a>
+                    <h1>Qué?</h1>
+                    <h4>Tu mama me mima</h4>
                 </div>
-            </div>
-            <div class="row about1">
-                
-            </div>
-            
-            
-        </div>
 
+                <div class="quien">
+                    <a href="#quien"></a>
+                    <h1 class="c-white">Quién?</h1>
+                    <h4 class="c-white">Tu mama me mima</h4>
+                </div>
+
+                <div class="como">
+                    <a href="#como"></a>
+                    <h1 class="c-white">Cómo?</h1>
+                    <h4 class="c-white">Tu mama me mima</h4>
+                </div>
+
+            </div>
+            <div id="downArrowContainer" class="downArrow"><button id="nextItem"><img src="../assets/img/index/arrow-down.png" width="125px"></button></div>
+        </div>
     </div>
 </body>
+<!-- SCRIPTS -->
 <script src="../js/app.js"></script>
-
+<script src="../js/anime.min.js"></script>
+<script src="../js/indexController.js"></script>
 </html>

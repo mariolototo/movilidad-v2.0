@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 <!-- LINKS A JQUERY, BOOTSTRAP Y HOJA DE ESTILOS -->
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-        </script>
+    </script>
     <title>Movilidad</title>
 </head>
 
@@ -21,10 +22,11 @@
     <div class="window-content">
         <!-- CONTAINER NAV -->
         <div id="nav" class="customNav fs-5 d-block">
-        
+
         </div>
+        <!-- CONTAINER HEADER -->
         <div class="container-fluid p-0 m-0" id="content">
-            <!-- CONTAINER HEADER -->
+
             <div class="header pt-2">
                 <div class="row">
                     <div class="col-3 mt-3 ps-5">
@@ -40,14 +42,69 @@
                     <hr>
                 </div>
             </div>
+            <!-- CONTAINER DIFUSION -->
+            <div class="galeria">
+                <div class="row">
+                    <div class="col-12 text-center mt-5">
+                        <h1>DIFUSION DE IMÁGENES</h1>
+                        <div class="years">
+                            <nav class="navGaleria mt-5">
+                                <a class="yearsA" href="#">2016</a>
+                                <a class="yearsA" href="#">2017</a>
+                                <a class="yearsA" href="#">2018</a>
+                                <a class="yearsA" href="#">2019</a>
+                                <a class="yearsA" href="#">2020</a>
+                                <a class="yearsA" href="#">2021</a>
+                                <a class="yearsA" href="#">2022</a>
+                                <div class="animation start-selected"></div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
 
-            
-            
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-12 w-75 sliderGaleria" id="sliderGaleria">
+                        <div class="btnPrev" id="btnPrev"></div>
+                        <div class="sliderContent d-flex flex-nowrap justify-content-center" id="sliderContent">
+                            <img src="http://localhost:60000/img/1.jpg" width="500px">
+                            <img src="http://localhost:60000/img/2.jpg" width="500px">
+                            <img src="http://localhost:60000/img/9.jpg" width="500px">
+                            <img src="http://localhost:60000/img/1.jpg" width="500px">
+                            <img src="http://localhost:60000/img/2.jpg" width="500px">
+                            <img src="http://localhost:60000/img/9.jpg" width="500px">
+                            <img src="http://localhost:60000/img/1.jpg" width="500px">
+                            <img src="http://localhost:60000/img/2.jpg" width="500px">
+                            <img src="http://localhost:60000/img/9.jpg" width="500px">
+                            <img src="http://localhost:60000/img/1.jpg" width="500px">
+                        </div>
+                        <div class="btnNext" id="btnNext"><button><img src="../assets/img/index/arrow-down.png"
+                                    width="150px"></button></div>
+                    </div>
+                </div>
+                <div class="minigallery row">
+                    <div class="col-12 mt-5 d-flex justify-content-center mb-2">
+                        <img class="minigallerImg" src="http://localhost:60000/img/1.jpg" width="150px" height="150px">
+                        <img class="minigallerImg" src="http://localhost:60000/img/2.jpg" width="150px" height="150px">
+                        <img class="minigallerImg" src="http://localhost:60000/img/9.jpg" width="150px" height="150px">
+                        <img class="minigallerImg" src="http://localhost:60000/img/1.jpg" width="150px" height="150px">
+                        <img class="minigallerImg" src="http://localhost:60000/img/2.jpg" width="150px" height="150px">
+                    </div>
+                    <div class="col-12 mt-5 d-flex justify-content-center mb-5">
+                        <img class="minigallerImg" src="http://localhost:60000/img/9.jpg" width="150px" height="150px">
+                        <img class="minigallerImg" src="http://localhost:60000/img/1.jpg" width="150px" height="150px">
+                        <img class="minigallerImg" src="http://localhost:60000/img/2.jpg" width="150px" height="150px">
+                        <img class="minigallerImg" src="http://localhost:60000/img/9.jpg" width="150px" height="150px">
+                        <img class="minigallerImg" src="http://localhost:60000/img/1.jpg" width="150px" height="150px">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
 </body>
 <!-- SCRIPTS -->
 <script src="../js/app.js"></script>
+<script src="../js/medium-zoom.min.js"></script>
 
 </html>
