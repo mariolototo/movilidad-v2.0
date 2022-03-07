@@ -153,11 +153,11 @@ window.onload = () => {
     }
 
     let contador = 0;
-    let moveAmount = 1323;
+    let moveAmount = 1453;
     let offset = 0;
 
     arrayImgs[contador].style.width = "500px";
-    sliderContent.style.transform = "translate(1323px)";
+    sliderContent.style.transform = "translate(1453px)";
 
     let btnNext = $("#btnNext");
     let btnPrev = $("#btnPrev");
@@ -172,7 +172,7 @@ window.onload = () => {
         }
 
         offset += 1.5;
-        moveAmount -= 315 + offset;
+        moveAmount -= 310 + offset;
         sliderContent.style.transform = "translate(" + moveAmount + "px)";
         sliderContent.style.transition = ".5s ease";
     
@@ -189,7 +189,7 @@ window.onload = () => {
         }
 
         offset -= 1.5;
-        moveAmount += 315 + offset;
+        moveAmount += 310 + offset;
         sliderContent.style.transform = "translate(" + moveAmount + "px)";
         sliderContent.style.transition = ".5s ease";
         
@@ -231,6 +231,10 @@ window.onload = () => {
 
     }
 
-
+    mediumZoom(".minigallerImg", {
+        margin: 50,
+        width: 600,
+        height: 600
+    });
 
 }
