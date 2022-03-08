@@ -155,6 +155,8 @@ window.onload = () => {
     let contador = 0;
     let moveAmount = 1453;
     let offset = 1;
+    
+    console.log(arrayImgs[0].style.marginRight)
 
     arrayImgs[contador].style.width = "500px";
     sliderContent.style.transform = "translate(1400px)";
@@ -171,8 +173,8 @@ window.onload = () => {
             btnNext.html("");
         }
 
-        //offset += 10;
-        moveAmount -= 370/*  - offset */;
+        offset += 30;
+        moveAmount -= (432.109 - offset);
         sliderContent.style.transform = "translate(" + moveAmount + "px)";
         sliderContent.style.transition = ".5s ease";
     
