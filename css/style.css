@@ -401,8 +401,14 @@ a:nth-child(7){
     margin-right: 5%;
 }
 
+.sliderContent{
+    position: relative; 
+    left: 6020px;
+    transition: all 0.5s ease;
+}
+
 .btnPrev{
-    position: fixed;
+    position: absolute;
     top: 489px;
     left: 120px;
     transform: rotate(90deg);
@@ -421,7 +427,7 @@ a:nth-child(7){
 }
 
 .btnNext{
-    position: fixed;
+    position: absolute;
     top: 482px;
     left: 1557px;
     transform: rotate(-90deg);
@@ -437,16 +443,6 @@ a:nth-child(7){
 .btnNext:hover{
     opacity: 100%;
     transition: .3s;
-}
-
-.translate-500{
-    transform: translate(-500px, 0px);
-    transition: .5s;
-}
-
-.translate--500{
-    transform: translate(500px, 0px);
-    transition: .5s;
 }
 
 .img-little {

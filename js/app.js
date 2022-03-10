@@ -145,6 +145,7 @@ window.onload = () => {
 
     for (let i = 0; i < sliderContent.children.length; i++) {
         arrayImgs.push(sliderContent.children[i]);
+
         if (i != 0) {
             arrayImgs[i].style.width = "250px";
             arrayImgs[i].style.height = "200px";
@@ -153,13 +154,9 @@ window.onload = () => {
     }
 
     let contador = 0;
-    let moveAmount = 1453;
-    let offset = 1;
-    
-    console.log(arrayImgs[0].style.marginRight)
+    let offset = 1.105;
 
     arrayImgs[contador].style.width = "500px";
-    sliderContent.style.transform = "translate(1400px)";
 
     let btnNext = $("#btnNext");
     let btnPrev = $("#btnPrev");
@@ -173,29 +170,27 @@ window.onload = () => {
             btnNext.html("");
         }
 
-        offset += 30;
-        moveAmount -= (432.109 - offset);
-        sliderContent.style.transform = "translate(" + moveAmount + "px)";
-        sliderContent.style.transition = ".5s ease";
-    
-        console.log(sliderContent.getBoundingClientRect().x);
+        let currentLeft = parseInt(sliderContent.style.left);
+
+        sliderContent.style.left = (currentLeft - (308.109 - offset)) + "px";
 
         changeImgsNext();
     });
 
     btnPrev.on("click", () => {
         contador--;
+
         if(contador < arrayImgs.length - 1){
             btnNext.html("<button><img src='../assets/img/index/arrow-down.png 'width='150px'></button>");
         }
+
         if(contador == 0){
             btnPrev.html("");
         }
 
-        offset -= 1.5;
-        moveAmount += 310 + offset;
-        sliderContent.style.transform = "translate(" + moveAmount + "px)";
-        sliderContent.style.transition = ".5s ease";
+        let currentLeft = parseInt(sliderContent.style.left);
+
+        sliderContent.style.left = (currentLeft + (308.109 - offset)) + "px";
         
         changeImgsPrev();
     });
@@ -218,7 +213,6 @@ window.onload = () => {
     }
 
     function changeImgsPrev() {
-        console.log(contador)
 
         if (contador <= 0) {
             contador = 0;
