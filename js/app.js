@@ -161,6 +161,11 @@ window.onload = () => {
     let btnNext = $("#btnNext");
     let btnPrev = $("#btnPrev");
 
+    console.log("Slider: " + sliderContent.getBoundingClientRect().x);
+    console.log("Primera Imagen: " + arrayImgs[0].getBoundingClientRect().x);
+
+    calculateFirstDisplacement();
+
     btnNext.on("click", () => {
         contador++;
 
@@ -194,6 +199,17 @@ window.onload = () => {
         
         changeImgsPrev();
     });
+
+    function calculateFirstDisplacement(){
+        let firstImagePositionX = Math.abs(arrayImgs[0].getBoundingClientRect().x);
+        let firstImageHalfWidth = arrayImgs[0].width/2;
+        let currentSliderPosition = Math.abs(sliderContent.getBoundingClientRect().x);
+        let firstImageMargin = 57.109;
+
+        let moveAmount = currentSliderPosition + firstImagePositionX + firstImageMargin + firstImageHalfWidth + (offset * (arrayImgs.length/2 - 1))
+
+        sliderContent.style.left = moveAmount + "px";
+    }
 
     function changeImgsNext() {
 
