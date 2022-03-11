@@ -276,6 +276,18 @@ body {
         transform: translate(-400px, 0px);
     }
 }
+/* MARGEN TEXTO DESCRIPCION MOVILES */
+@media (max-width: 768px) {
+    .descripcionText{
+        margin-right: 70px !important;
+    }
+}
+/* MARGEN TEXTO DESCRIPCION TABLETS/PCS */
+@media (min-width: 768px) {
+    .descripcionText{
+        margin-right: 200px !important;
+    }
+}
 
 .fixNavIn{
     transform: translate(0px, 0px);
@@ -285,9 +297,7 @@ body {
     transform: translate(-400px, 0px);
 }
 
-.descripcionText{
-    margin-right: 200px !important;
-}
+
 
 /* GALERIA */
 
