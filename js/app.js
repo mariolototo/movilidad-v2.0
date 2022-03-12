@@ -1,7 +1,7 @@
 window.onload = () => {
     let content = $("#content")[0];
     let nav = $("#nav")[0];
-    let navContent = `<div class="row w-100 align-middle">
+    let navContent = `<div class="row w-100 align-middle justify-content-end">
     <div class="col-11"></div>
     <div class="col-1">
         <button id="closeNav" class="navButton"><img src="../assets/img/nav/close.png"
@@ -97,6 +97,8 @@ window.onload = () => {
     let openNav = $("#openNav")[0];
 
     openNav.addEventListener("click", () => {
+        document.body.classList.add("stopScroll");
+
         nav.style.animation = "navAppear .5s ease-in-out";
         setTimeout(() => {
             nav.classList.remove("fixNavOut");
@@ -112,6 +114,7 @@ window.onload = () => {
 
     let closeNav = $("#closeNav")[0];
     closeNav.addEventListener("click", () => {
+        document.body.classList.remove("stopScroll");
         nav.style.animation = "navDesappear .5s ease-in-out";
         setTimeout(() => {
             nav.classList.remove("fixNavIn");

@@ -28,7 +28,7 @@ body {
 @media (max-width: 576px) {
     .imgUE{
         width: 100px;
-        height: 50px;
+        height: 25px;
     }
     .imgWin{
         width: 150px;
@@ -108,15 +108,149 @@ body {
 
 /* -------------NAV-------------- */
 
-.customNav {
-    position: absolute;
-    height: 100%;
-    width: 20%;
-    padding: 20px 20px;
-    box-shadow: 10px 0 20px -2px rgb(196, 196, 196);    
-    z-index: 99;
-    background-color: #fff;
-    transform: translate(-400px, 0px);
+@media (min-width: 0px) { 
+    .customNav {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 20px 20px;
+        box-shadow: 10px 0 20px -2px rgb(196, 196, 196);    
+        z-index: 99;
+        background-color: #fff;
+        transform: translate(-590px, 0px);
+    }
+
+    @keyframes navAppear {
+        100%{
+            transform: translate(0px, 0px);
+        }
+    } 
+    
+    @keyframes navDesappear {
+        100%{
+            transform: translate(-590px, 0px);
+        }
+    }
+
+    .fixNavOut{
+        transform: translate(-590px, 0px);
+    }
+}
+
+@media (min-width: 576px) { 
+    .customNav {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        padding: 20px 20px;
+        box-shadow: 10px 0 20px -2px rgb(196, 196, 196);    
+        z-index: 99;
+        background-color: #fff;
+        transform: translate(-800px, 0px);
+    }
+
+    @keyframes navAppear {
+        100%{
+            transform: translate(0px, 0px);
+        }
+    } 
+    
+    @keyframes navDesappear {
+        100%{
+            transform: translate(-800px, 0px);
+        }
+    }
+
+    .fixNavOut{
+        transform: translate(-800px, 0px);
+    }
+}
+
+@media (min-width: 768px) { 
+    .customNav {
+        position: absolute;
+        height: 100%;
+        width: 35%;
+        padding: 20px 20px;
+        box-shadow: 10px 0 20px -2px rgb(196, 196, 196);    
+        z-index: 99;
+        background-color: #fff;
+        transform: translate(-800px, 0px);
+    }
+
+    @keyframes navAppear {
+        100%{
+            transform: translate(0px, 0px);
+        }
+    } 
+    
+    @keyframes navDesappear {
+        100%{
+            transform: translate(-800px, 0px);
+        }
+    }
+
+    .fixNavOut{
+        transform: translate(-800px, 0px);
+    }
+}
+
+@media (min-width: 1400px) { 
+    .customNav {
+        position: absolute;
+        height: 100%;
+        width: 25%;
+        padding: 20px 20px;
+        box-shadow: 10px 0 20px -2px rgb(196, 196, 196);    
+        z-index: 99;
+        background-color: #fff;
+        transform: translate(-800px, 0px);
+    }
+
+    @keyframes navAppear {
+        100%{
+            transform: translate(0px, 0px);
+        }
+    } 
+    
+    @keyframes navDesappear {
+        100%{
+            transform: translate(-800px, 0px);
+        }
+    }
+
+    .fixNavOut{
+        transform: translate(-800px, 0px);
+    }
+}
+
+@media (min-width: 2000px) { 
+    .customNav {
+        position: absolute;
+        height: 100%;
+        width: 15%;
+        padding: 20px 20px;
+        box-shadow: 10px 0 20px -2px rgb(196, 196, 196);    
+        z-index: 99;
+        background-color: #fff;
+        transform: translate(-800px, 0px);
+    }
+
+    @keyframes navAppear {
+        100%{
+            transform: translate(0px, 0px);
+        }
+    } 
+    
+    @keyframes navDesappear {
+        100%{
+            transform: translate(-800px, 0px);
+        }
+    }
+
+    .fixNavOut{
+        transform: translate(-800px, 0px);
+    }
 }
 
 .customNav > div > div > img {
@@ -157,6 +291,10 @@ body {
 
 .unblur{
     filter: blur(0px);
+}
+
+.fixNavIn{
+    transform: translate(0px, 0px);
 }
 
 .link {
@@ -296,28 +434,6 @@ body {
     height: 100%;
     overflow: hidden;
 }
-
-@keyframes navAppear {
-    100%{
-        transform: translate(0px, 0px);
-    }
-} 
-
-@keyframes navDesappear {
-    100%{
-        transform: translate(-400px, 0px);
-    }
-}
-
-.fixNavIn{
-    transform: translate(0px, 0px);
-}
-
-.fixNavOut{
-    transform: translate(-400px, 0px);
-}
-
-
 
 /* GALERIA */
 
