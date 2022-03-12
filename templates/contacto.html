@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- LINKS A JQUERY, BOOTSTRAP Y HOJA DE ESTILOS -->
+    <!-- LINKS A JQUERY, BOOTSTRAP Y HOJA DE ESTILOS -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,48 +22,54 @@
     <div class="window-content">
         <!-- CONTAINER NAV -->
         <div id="nav" class="customNav fs-5 d-block">
-        
+
         </div>
         <div class="container-fluid p-0 m-0" id="content">
             <!-- CONTAINER HEADER -->
-            <div class="header pt-2">
-                <div class="row">
+            <div class="header pt-2 m-0">
+                <div class="row w-100">
                     <div class="col-3 mt-3 ps-5">
                         <button class="navButton" id="openNav"><img src="../assets/img/menu.png" alt="" width="30"
                                 height="30"></button>
                     </div>
                     <div class="col-5">
-                        <img class="img-fluid" src="../assets/img/logo.png" alt="" width="250" height="60">
+                        <img class="img-fluid imgWin" src="../assets/img/logo.png" alt="" width="250" height="60">
                     </div>
                     <div class="col-4 mt-2">
-                        <img src="../assets/img/cofinanciado.png" alt="" width="200" height="50">
+                        <img class="imgUE" src="../assets/img/cofinanciado.png" alt="" width="200" height="50">
                     </div>
                     <hr>
                 </div>
             </div>
             <!-- CONTAINER CONTACTO -->
             <div class="contacto">
-                <div class="row">
+                <div class="row w-100 m-0">
                     <div class="col-12 text-center mt-5">
                         <h1>Contacto</h1>
                         <hr class="hrContacto">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <img class="img-fluid imgContact" src="../assets/img/logo-alqueria.png" alt="" width="600" height="600">
-                    </div>
-                    <div class="col-8 contactoInfo text-center">
-                        <h1 class="fs-2 text mb-5">Associació empresarial l'Alqueria Projectes Educatius</h1>
-                        <p class="fs-4 text">Avda Pobla de Vallbona, n.35, 46184,<br>San Antonio de Benagéver - Valencia
-                        </p>
-                        <h3 class="mb-5 mt-5">Mail de contacto</h3>
-                        <p class="fs-4 text">info@alqueriaeducatius.org</p>
+                <div class="row w-100 m-0">
+                    <div class="col-12 d-flex flex-column flex-md-row flex-lg-row flex-xl-row text-center align-items-center">
+                        <div class="container">
+                            <img class="img-fluid" src="../assets/img/logo-alqueria.png" alt="" width="600"
+                                height="600">
+                        </div>
+
+                        <div class="container">
+                            <h1 class="fs-5 text mb-5">Associació empresarial l'Alqueria Projectes Educatius</h1>
+                            <p class="fs-6 text">Avda Pobla de Vallbona, n.35, 46184,<br>San Antonio de Benagéver -
+                                Valencia
+                            </p>
+                            <h3 class="mt-5 fs-5">Mail de contacto</h3>
+                            <p class="fs-6 text">info@alqueriaeducatius.org</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row bg-light">
-                    <div class="col-12 mb-5">
-                        <form action="mailto:alberto.moreno2357@gmail.com" method="post" enctype="text/plain" class="formContacto">
+                <div class="row w-100 m-0 pt-4 bg-light justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-6 mb-5">
+                        <form action="mailto:alberto.moreno2357@gmail.com" method="post" enctype="text/plain"
+                            class="formContacto">
                             <div class="mb-5">
                                 <input type="text" class="form-control formInput shadow p-3 mb-5 bg-body rounded"
                                     id="name" placeholder="Nombre">
