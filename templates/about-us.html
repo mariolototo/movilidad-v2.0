@@ -20,8 +20,8 @@
 </head>
 
 <body style="overflow: hidden">
-    <!-- CONTAINER GENERAL -->
-    <div class="window-content" id="index">
+    <!-- CONTAINER GENERAL PC-->
+    <div class="window-content d-none d-lg-block" id="index">
         <div id="upArrowContainer" class="upArrow"></div>
         <div class="container-fluid p-0 m-0" id="content">
             <!-- CONTAINER INDEX -->
@@ -49,6 +49,23 @@
             <div id="downArrowContainer" class="downArrow"><button id="nextItem"><img src="../assets/img/index/arrow-down.png" width="125px"></button></div>
         </div>
     </div>
+    <!-- CONTAINER GENERAL MOVIL/TABLET -->
+    <div d-lg-none">
+        <button id="closeAbout" onclick = "location.href = 'http://127.0.0.1:5500/templates/descripcion.html'"><img src="../assets/img/index/x.png" alt="" width="30px"></button>
+        <div class="que-movil">
+            <h1>Qué?</h1>
+            <h4>Tu mama me mima</h4>
+        </div>
+        <div class="quien-movil">
+            <h1>Quién?</h1>
+            <h4>Tu mama me mima</h4>
+        </div>
+        <div class="como-movil">
+            <h1>Cómo?</h1>
+            <h4>Tu mama me mima</h4>
+        </div>
+    </div>
+    <!-- FIN CONTAINER GENERAL MOVIL/TABLET -->
 </body>
 <!-- SCRIPTS -->
 <script src="../js/anime.min.js"></script>
